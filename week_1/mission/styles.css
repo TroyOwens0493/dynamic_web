@@ -1,0 +1,57 @@
+* {
+    font-family: 'Times New Roman';
+}
+
+:not(h1) {
+    font-size: 20px;
+}
+
+h1 {
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+h2 {
+    color: #006EB6;
+    font-size: 15px;
+    justify-self: center;
+    line-height: 0px;
+    font-weight: normal;
+}
+
+.title {
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 30px;
+}
+
+.content {
+    margin: 30px;
+    padding: 50px 125px;
+    max-width: 600px;
+    border: 1px, solid, grey;
+}
+
+.title, main, footer {
+    justify-self: center;
+}
+
+.title {
+    letter-spacing: .2rem;
+    line-height: 1rem;
+}
+
+main {
+    line-height: 1.5rem;
+}
+
+footer {
+    padding-top: 30px;
+}
+
+img {
+    width: 150px;
+}
