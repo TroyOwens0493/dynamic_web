@@ -1,6 +1,7 @@
 const colorSelector = document.getElementById("theme-selector");
 const bodyElement = document.getElementById("body");
 const logo = document.getElementById("logo");
+
 colorSelector.addEventListener("change", () => {
     const currentTheme = bodyElement.className;
     changeTheme(currentTheme);
