@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="mission.js" defer></script>
     <title>Document</title>
 </head>
 
-<body>
+<body class="light" id="body">
+    <select id="theme-selector">
+        <option value="light">light</option>
+        <option value="dark">dark</option>
+    </select>
     <div class="content">
         <header class="title">
             <h1>MISSION STATEMENT</h1>
@@ -32,7 +37,7 @@
             </ol>
         </main>
         <footer>
-            <img src="images/byui-logo.webp" alt="byui-logo">
+            <img src="images/byui-logo.webp" alt="byui-logo" id="logo">
         </footer>
     </div>
 </body>
