@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-color: #161032;
+    --background-color: #FAFF81;
+    --primary-color-1: #E06D06;
+    --primary-color-2: #E06D06;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: oswald, sans-serif;
+}
+
+h1 {
+    justify-self: center;
+    padding: 20px;
+}
+
+h1,
+h2,
+p {
+    color: var(--text-color);
+}
+
+nav {
+    border-top: var(--primary-color-1) 1px solid;
+    border-bottom: var(--primary-color-1) 1px solid;
+}
+
+nav ul {
+    justify-self: right;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+nav ul li a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 75% 1fr;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+.release-info {
+    padding: 20px;
+    border-right: var(--primary-color-1) 1px solid;
+    margin: 20px;
+}
+
+.release-info > * {
+    justify-self: right;
+}
+
+#filters {
+    border: var(--primary-color-1) 1px solid;
+    margin: 25px;
+}
+
+.skiptocontent {
+    position: absolute;
+    top: -40px;
+    background-color: white;
+}
+
+.skiptocontent a:focus {
+    top: 10px;
+}
