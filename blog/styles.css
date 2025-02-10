@@ -1,20 +1,17 @@
+/* Import Statements */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* CSS Variables (Custom Properties) */
 :root {
     --text-color: #161032;
     --background-color: #FAFF81;
     --primary-color-1: #E06D06;
-    --primary-color-2: #E06D06;
 }
 
+/* Base Styles (Elements) */
 body {
     background-color: var(--background-color);
     font-family: oswald, sans-serif;
-}
-
-h1 {
-    justify-self: center;
-    padding: 20px;
 }
 
 h1,
@@ -23,10 +20,27 @@ p {
     color: var(--text-color);
 }
 
+h1 {
+    justify-self: center;
+    padding: 20px;
+}
+
 h2 {
     margin-top: 3.4rem;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.date {
+    font-size: 1.2rem;
+}
+
+
+/* Navigation Styles */
 nav {
     border-top: var(--primary-color-1) 1px solid;
     border-bottom: var(--primary-color-1) 1px solid;
@@ -44,6 +58,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Main Content Styles */
 main {
     display: grid;
     grid-template-columns: 75% 1fr;
@@ -64,11 +79,13 @@ main {
     justify-self: right;
 }
 
+/* Sidebar/Filter Styles */
 #filters {
     border: var(--primary-color-1) 1px solid;
     margin: 25px;
 }
 
+/* Accessibility Styles */
 .skiptocontent {
     position: absolute;
     top: -40px;
@@ -78,14 +95,4 @@ main {
 .skiptocontent a:focus {
     top: 10px;
     display: none;
-}
-
-.date {
-    font-size: 1.2rem;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
