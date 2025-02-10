@@ -23,6 +23,10 @@ p {
     color: var(--text-color);
 }
 
+h2 {
+    margin-top: 3.4rem;
+}
+
 nav {
     border-top: var(--primary-color-1) 1px solid;
     border-bottom: var(--primary-color-1) 1px solid;
@@ -73,4 +77,15 @@ main {
 
 .skiptocontent a:focus {
     top: 10px;
+    display: none;
+}
+
+.date {
+    font-size: 1.2rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
