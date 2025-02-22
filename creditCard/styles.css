@@ -1,0 +1,138 @@
+:root {
+    --card-width: 450px;
+    --card-height: 250px;
+    --card-grid-columns: 3;
+    --card-grid-rows: 5;
+
+    --form-width: 600px;
+    --form-height: 450px;
+    --form-grid-columns: 4;
+    --form-grid-rows: 6;
+
+}
+
+form {
+    display: grid;
+
+    grid-template-columns: repeat(var(--form-grid-columns), calc(var(--form-width) / var(--form-grid-columns)));
+    grid-template-rows: repeat(var(--form-grid-rows), calc(var(--form-height) / var(--form-grid-rows)));
+
+    width: var(--form-width);
+}
+
+.card-front {
+    display: grid;
+    grid-template-columns: repeat(var(--card-grid-columns), calc(var(--card-width) / var(--card-grid-columns)));
+    grid-template-rows: repeat(var(--card-grid-rows), calc(var(--card-height) / var(--card-grid-rows)));
+
+    width: var(--card-width);
+    height: var(--card-height);
+
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow:  5px  5px 5px gray;
+    z-index: 1;
+}
+
+.card-back {
+    display: grid;
+    grid-template-columns: repeat(var(--card-grid-columns), calc(var(--card-width) / var(--card-grid-columns)));
+    grid-template-rows: repeat(var(--card-grid-rows), calc(var(--card-height) / var(--card-grid-rows)));
+
+    width: var(--card-width);
+    height: var(--card-height);
+
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+
+    border-radius: 10px;
+    box-shadow:  5px  5px 5px gray;
+    background-color: lightgray;
+}
+
+
+.submit {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+    margin: 20px;
+}
+
+.total {
+    grid-row: 1 / 2;
+    margin-left: 10px;
+}
+
+.card-image {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+    justify-self: center;
+    margin-top: 25px;
+}
+
+p.card-num {
+    grid-row: 2 /3;
+    grid-column: 1 / 2;
+    margin-left: 10px;
+}
+
+input.card-num {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+}
+
+p.card-holder {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin-left: 10px;
+}
+
+input.card-holder {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+}
+
+p.exp {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    justify-self: center;
+}
+
+input.exp-month {
+    width: 35%;
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+}
+
+input.exp-year {
+    width: 35%;
+    justify-self: right;
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+}
+
+.mag-stripe {
+    background-color: black;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+}
+
+p.cvc-cvv {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    justify-self: center;
+}
+
+input.cvc-cvv {
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+}
+
+p {
+    font-size: 20px;
+    align-self: flex-end;
+    margin-bottom: 0;
+}
+
+input {
+    margin: 10px;
+}
