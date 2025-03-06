@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Oswald:wght@200;700&family=Roboto:ital,wght@0,100;0,900;1,100;1,900&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Caveat", cursive;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.title h1 {
+    font-family: var(--secondary-font);
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+search {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+}
+
+search input[type="text"] {
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    flex-grow: 1;
+    outline: none;
+}
+
+search button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.submit-img {
+    width: 20px;
+    height: auto;
+}
+
+.recipe {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.picture-of-the-food {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.tags {
+    margin-top: 0;
+    padding: 5px;
+    border: 1px solid black;
+    align-self: flex-start;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 0.9em;
+}
+
+.name {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.desc {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+footer {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.icon {
+    max-width: 50px;
+}
+
+@media screen and (min-width: 600px) {
+    .recipe {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .picture-of-the-food {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .info {
+        flex: 1;
+        padding: 0 0 0 15px;
+    }
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css3?family=Caveat:wght@400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Amatic SC";
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 50px;
+    float: left;
+}
+
+h1 {
+    vertical-align: bottom;
+}
+
+.submit {
+    max-height: 1.3rem;
+}
+
+.submit-img {
+    max-height: .9rem;
+}
+
+search>* {
+    vertical-align: top;
+}
+
+header {
+    border-bottom: solid gray 1px;
+}
+
+.recipe {
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.tags {
+    margin: 10px;
+    padding: 0px;
+    border: 1px black solid;
+    float: left;
+}
+
+.tag {
+    margin: 5px;
+}
+
+.name {
+    display: block;
+}
+
+.picture-of-the-food {
+    max-width: 100%;
+    margin: 10px;
+}
