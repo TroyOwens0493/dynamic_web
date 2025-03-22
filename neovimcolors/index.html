@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="./styles/site-plan.css" />
+</head>
+
+<body>
+    <header>
+        <h1>[Site name] Site Plan</h1>
+        <h2>FirstName LastName</h2>
+        <h2>WDD 131-[section]</h2>
+        <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+    </header>
+    <main>
+        <!-- ------------------------Steps 2-3------------------------------ -->
+        <hr />
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>My purpose with this site is to show people neovim colorschemes. I want to help people find their next
+            colorscheme.</p>
+        <!-- change this -->
+
+        <h3>Audience</h3>
+        <p>My audience is neovim users who like customizing their config.</p>
+        <!-- change this -->
+
+        <h3>Dynamic elements</h3>
+        <p>I will dynamically provide the colorschemes, I will also allow to search for different color schemes.</p>
+        <!-- change this -->
+
+        <hr />
+        <h2>Branding</h2>
+        <h3>Troy's Colorschemes</h3>
+        <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+        <img src="./images/logo.webp" alt="Logo image" />
+        <hr />
+        <h2>Style Guide</h2>
+
+        <!-- ------------------------Steps 4-8------------------------------ -->
+
+        <h3>Color Palette</h3>
+        <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+        <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+        Palette URL:
+        <a href="https://coolors.co/143109-2f639a-7faa50-f7f7f7-efefef"
+            target="_blank">https://coolors.co/143109-2f639a-7faa50-f7f7f7-efefef</a>
+
+        <table class="colors">
+            <tbody>
+                <tr>
+                    <th>Primary</th>
+                    <th>Secondary</th>
+                    <th>Accent 1</th>
+                    <th>Accent 2</th>
+                </tr>
+                <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+                <tr>
+                    <td class="primary">[#2F639A]</td>
+                    <td class="secondary">[#7FAA50]</td>
+                    <td class="accent1">[#143109]</td>
+                    <td class="accent2"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ------------------------Step 9------------------------------ -->
+
+        <h3>Typography</h3>
+        <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+        <h4>
+            Heading Font: [Roboto]
+            <!-- change this -->
+        </h4>
+        <h4>
+            Paragraph Font: [New York]
+            <!-- change this -->
+        </h4>
+        <h3>Normal paragraph example</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+        </p>
+        <h3>Colored paragraph example</h3>
+        <p class="colored">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+        </p>
+
+        <!-- ------------------------Step 10------------------------------ -->
+
+        <h3>Navigation</h3>
+        <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Page2</a>
+            <a href="#">Page3</a>
+        </nav>
+        <hr />
+
+        <h2>Content</h2>
+        <h3>Home page</h3>
+        <p>[
+            {
+            "name": "Tokyo Night",
+            "author": "folke",
+            "url": "https://github.com/folke/tokyonight.nvim",
+            "basedOn": null,
+            "lastUpdated": "2023-10-27",
+            "tags": ["Dark", "Lua", "Treesitter", "LSP"],
+            "description": "A clean, dark Neovim theme written in Lua, with support for lsp, treesitter and other
+            plugins.",
+            "previewImage": "./images/tokyonight.png",
+            "installation": ["Plugin manager: `use 'folke/tokyonight.nvim'`, then `colorscheme tokyonight`"],
+            "configuration": {"style": "night", "transparent": false, "terminalColors": true},
+            "compatibility": {"neovimVersion": ">=0.5.0", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Nord",
+            "author": "arcticicestudio",
+            "url": "https://github.com/arcticicestudio/nord-vim",
+            "basedOn": "Nord",
+            "lastUpdated": "2023-10-27",
+            "tags": ["Light", "Dark", "Arctic", "Blue"],
+            "description": "An arctic, north-bluish color palette.",
+            "previewImage": "./images/nord.png",
+            "installation": ["Plugin manager or clone, then `colorscheme nord`"],
+            "configuration": {"background": "light/dark", "terminalColors": true},
+            "compatibility": {"neovimVersion": ">=0.1.5", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Gruvbox Material",
+            "author": "sainnhe",
+            "url": "https://github.com/sainnhe/gruvbox-material",
+            "basedOn": "Gruvbox",
+            "lastUpdated": "2023-10-27",
+            "tags": ["Dark", "Material", "Gruvbox"],
+            "description": "A material design variant of Gruvbox.",
+            "previewImage": "./images/gruvbox-material.png",
+            "installation": ["Plugin manager, then `colorscheme gruvbox-material`"],
+            "configuration": {"contrast": "medium", "palette": "mix", "transparentBackground": false, "terminalColors":
+            true},
+            "compatibility": {"neovimVersion": ">=0.4.3", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Catppuccin",
+            "author": "catppuccin",
+            "url": "https://github.com/catppuccin/nvim",
+            "basedOn": null,
+            "lastUpdated": "2023-10-27",
+            "tags": ["Pastel", "Dark", "Light"],
+            "description": "Soothing pastel theme for Neovim.",
+            "previewImage": "./images/catppuccin.png",
+            "installation": ["Plugin manager, then `colorscheme catppuccin`"],
+            "configuration": {"flavour": "mocha", "transparent_background": false, "term_colors": true},
+            "compatibility": {"neovimVersion": ">=0.5.0", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Onedark",
+            "author": "joshdick",
+            "url": "https://github.com/joshdick/onedark.vim",
+            "basedOn": "Atom One Dark",
+            "lastUpdated": "2023-10-27",
+            "tags": ["Dark", "Atom", "One Dark"],
+            "description": "A Neovim dark colorscheme based on Atom's One Dark theme.",
+            "previewImage": "./images/onedark.png",
+            "installation": ["Plugin manager or clone, then `colorscheme onedark`"],
+            "configuration": {"style": "dark", "term_colors": true},
+            "compatibility": {"neovimVersion": ">=0.1.5", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Dracula",
+            "author": "dracula",
+            "url": "https://github.com/dracula/vim",
+            "basedOn": "Dracula",
+            "lastUpdated": "2023-10-27",
+            "tags": ["Dark", "Dracula"],
+            "description": "A dark theme for many applications, including Neovim.",
+            "previewImage": "./images/dracula.png",
+            "installation": ["Plugin manager or clone, then `colorscheme dracula`"],
+            "configuration": {"term_colors": true},
+            "compatibility": {"neovimVersion": ">=0.1.5", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Solarized",
+            "author": "altercation",
+            "url": "https://github.com/altercation/vim-colors-solarized",
+            "basedOn": "Solarized",
+            "lastUpdated": "2023-10-27",
+            "tags": ["Light", "Dark", "Solarized"],
+            "description": "A sixteen base and sixteen accent color palette (8 bit) designed for use with terminal and
+            gui applications.",
+            "previewImage": "./images/solarized.png",
+            "installation": ["Plugin manager or clone, then `colorscheme solarized`"],
+            "configuration": {"background": "light/dark", "term_colors": true},
+            "compatibility": {"neovimVersion": ">=0.1.5", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Ayu",
+            "author": "ayu-theme",
+            "url": "https://github.com/ayu-theme/ayu-vim",
+            "basedOn": null,
+            "lastUpdated": "2023-10-27",
+            "tags": ["Light", "Dark", "Mirage"],
+            "description": "Modern Sublime Text theme port for Vim.",
+            "previewImage": "./images/ayu.png",
+            "installation": ["Plugin manager or clone, then `colorscheme ayu`"],
+            "configuration": {"background": "light/dark/mirage", "term_colors": true},
+            "compatibility": {"neovimVersion": ">=0.1.5", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Palenight",
+            "author": "drewtempelmeyer",
+            "url": "https://github.com/drewtempelmeyer/palenight.vim",
+            "basedOn": "Material Palenight",
+            "lastUpdated": "2023-10-27",
+            "tags": ["Dark", "Material", "Palenight"],
+            "description": "A dark material design theme.",
+            "previewImage": "./images/palenight.png",
+            "installation": ["Plugin manager or clone, then `colorscheme palenight`"],
+            "configuration": {"term_colors": true},
+            "compatibility": {"neovimVersion": ">=0.1.5", "terminalSupport": true, "guiSupport": true}
+            },
+            {
+            "name": "Rose Pine",
+            "author": "rose-pine",
+            "url": "https://github.com/rose-pine/neovim",
+            "basedOn": null,
+            "lastUpdated": "2023-10-27",
+            "tags": ["Pastel", "Dark", "Light", "Rose"],
+            "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist.",
+            "previewImage": "./images/rose-pine.png",
+            "installation": ["Plugin manager, then `colorscheme rose-pine`"],
+            "configuration": {"variant": "main", "term_colors": true},
+            "compatibility": {"neovimVersion": ">=0.5.0", "terminalSupport": true, "guiSupport": true}
+            }
+            ]</p>
+        <h3>About</h3>
+        <p>Hey there! This is a website to help people find new and exciting neovim colorschemes! ON you homepage, you
+            can scroll through our list of the most popular neovim colorschemes. You are welcome to use the searchbar to
+            find a colorscheme that you are looking for though.</p>
+        <p>
+            Hello from the creator! My name is Troy. I am a software engineer who has experience with HTML, CSS, TS,
+            Python, and C#. I love learning about new developer tools, and I love open source projects. To help share my
+            passion for software projects like this, I decided to make this site of different Neovim colorschemes. Here
+            you can find a new colorscheme that fits your Neovim setup.
+        </p>
+        <h2>Wireframes</h2>
+
+        <h3>Home</h3>
+        <p>
+            Each colorscheme will have the name of the colorscheme, the url for the colorscheme, description, tags, and
+            compatibility listed beside the image of the colorscheme. Also, the first time the user visits the page,
+            they will see all of the colorschemes instead of just one.
+        </p>
+        <img src="images/Screenshot 2025-03-21 at 1.23.39 PM.png" alt="home page wireframe" />
+
+        <h3>About Page</h3>
+        <p>
+            At the bottom of the page, there will be a link to the neovim website, and there will be a link to my
+            github.
+        </p>
+        <img src="images/Screenshot 2025-03-21 at 1.27.51 PM.png" alt="page 2 wireframe" />
+    </main>
+</body>
+
+</html>
